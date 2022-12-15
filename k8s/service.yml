@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myu
+  name: rftg
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "myu"
+  - name: "rftg"
     port: 8080
   selector:
-    app: myu
+    app: rftg
